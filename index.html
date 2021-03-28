@@ -221,7 +221,7 @@
         const circSupply = totalSupply.sub(deadSupply);
 
         const bnbPrice = (Number(bnbReserves._reserve1) / Number(bnbReserves._reserve0));
-        const bnbPriceCbrl = (Number(cbrlReserves._reserve1) / Number(cbrlReserves._reserve0)) * 0.000001;
+        const bnbPriceCbrl = (Number(cbrlReserves._reserve0) / Number(cbrlReserves._reserve1)) * 1000000000000;
         const reauPriceBnb = (Number(reauReserves._reserve1) / Number(reauReserves._reserve0)) * 0.000000001;
         const dollarPrice = bnbPriceCbrl / bnbPrice;
 
